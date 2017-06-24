@@ -12,9 +12,7 @@ class App extends Component {
     componentWillReceiveProps(nextProps) {
         // will run when props are updated
         if(nextProps.connected && nextProps.connected !== this.props.connected){
-            setInterval(() => {
                 this.props.dispatchMessage('we received ::: your account balance is');
-            }, 500);
         }
     }
 
